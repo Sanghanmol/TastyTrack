@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import RecipeForm from "./components/RecipeForm";
 import RecipePage from "./pages/RecipePage";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 ReactDOM.createRoot(document.getElementById("app")).render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById("app")).render(
         <Route path="/add-recipe" element={<RecipeForm />} />
         <Route path="/recipe/:id" element={<RecipePage />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );
