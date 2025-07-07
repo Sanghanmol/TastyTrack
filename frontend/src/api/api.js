@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const PIXABAY_API_KEY = "49234130-22a45b56c47ba3b91679fe4c9";
-const API_URL = "http://localhost:5000/api";
+const API_URL = import.meta.env.PROD ? '/api' : 'http://localhost:5000/api';
 
 export const getRecipes = async () => {
   try {
